@@ -1,5 +1,5 @@
 {
-    "name": "pipedrive/pipedrive",
+    "name": "solarreviews/pipedrive-client",
     "type": "library",
     "description": "Pipedrive REST client for PHP",
     "keywords": [
