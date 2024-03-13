@@ -275,7 +275,7 @@ class NewDeal implements ModelInterface, ArrayAccess, JsonSerializable
      * @phpstan-var array<int|string, mixed>
      * @psalm-var array<int|string, mixed>
      */
-    protected array $container = [];
+    public array $container = [];
 
     /**
      * Constructor

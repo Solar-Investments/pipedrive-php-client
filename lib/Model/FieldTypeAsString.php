@@ -87,6 +87,8 @@ class FieldTypeAsString
 
     const VARCHAR_OPTIONS = 'varchar_options';
 
+    const DEAL = 'deal';
+
     /**
      * Gets allowable values of the enum
      * @return (string|int)[]
@@ -116,6 +118,7 @@ class FieldTypeAsString
             self::STAGE,
             self::STATUS,
             self::VARCHAR_OPTIONS,
+            self::DEAL,
         ];
     }
 }

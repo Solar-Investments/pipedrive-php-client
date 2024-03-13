@@ -346,7 +346,7 @@ class DealsApi
         // for model (json/xml)
         if (isset($new_deal)) {
             if ($headers['Content-Type'] === 'application/json') {
-                $httpBody = Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($new_deal));
+                $httpBody = Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($new_deal->container));
             } else {
                 $httpBody = $new_deal;
             }
