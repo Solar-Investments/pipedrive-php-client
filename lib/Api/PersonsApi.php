@@ -346,7 +346,7 @@ class PersonsApi
         // for model (json/xml)
         if (isset($new_person)) {
             if ($headers['Content-Type'] === 'application/json') {
-                $httpBody = Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($new_person));
+                $httpBody = Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($new_person->container));
             } else {
                 $httpBody = $new_person;
             }
